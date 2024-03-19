@@ -1,0 +1,1 @@
+plugin:consistent-default-export-name/fixed
