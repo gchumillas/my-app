@@ -1,10 +1,15 @@
-import Button from 'src/components/Button'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import NotFoundPage from './pages/NotFoundPage'
+import HomePage from './pages/HomePage'
 
 const App = () => {
   return (
-    <div>
-      <Button>hi there!</Button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
