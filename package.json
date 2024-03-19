@@ -9,7 +9,7 @@
     "lint": "eslint ./src && tsc --noEmit",
     "preview": "vite preview",
     "prepare": "husky",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "BROWSER=none storybook dev -p 6006"
   },
   "dependencies": {
     "clsx": "^2.1.0",
