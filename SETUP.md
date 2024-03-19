@@ -8,6 +8,8 @@
 
 ## React Router DOM (v6)
 
+## Redux
+
 
 ## Recommended plugins for Visual Studio Code
 
