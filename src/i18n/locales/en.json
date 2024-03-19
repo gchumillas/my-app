@@ -1,0 +1,9 @@
+{
+  "default": {},
+  "home-page": {
+    "welcome": "Welcome to My App!"
+  },
+  "not-found-page": {
+    "page-not-found": "Page not found"
+  }
+}
