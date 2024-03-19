@@ -12,6 +12,8 @@
 
 ## Husky
 
+## i18next
+
 
 ## Recommended plugins for Visual Studio Code
 
