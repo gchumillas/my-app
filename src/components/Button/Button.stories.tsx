@@ -7,3 +7,4 @@ export default {
 export const Example = () => {
   return <Button>Click me</Button>
 }
+Example.storyName = 'Button'
