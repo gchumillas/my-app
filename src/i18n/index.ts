@@ -8,8 +8,7 @@ i18n
   .use(initReactI18next)
   .use(LanguageDetector)
   .init({
-    // fallbackLng: import.meta.env.VITE_FALLBACK_LANG || 'en',
-    fallbackLng: 'en',
+    fallbackLng: import.meta.env.VITE_FALLBACK_LANG || 'en',
     fallbackNS: 'default',
     resources: {
       en,
