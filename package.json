@@ -13,13 +13,16 @@
     "clsx": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "~7.2.6",
     "react-router-dom": "^6.22.3",
+    "redux": "~4.1.2",
     "styled-components": "^6.1.8",
     "twin.macro": "^3.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
+    "@types/react-redux": "^7.1.33",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-react": "^4.2.1",
