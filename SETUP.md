@@ -10,6 +10,8 @@
 
 ## Redux
 
+## Husky
+
 
 ## Recommended plugins for Visual Studio Code
 
