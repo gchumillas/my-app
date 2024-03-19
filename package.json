@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint ./src && tsc --noEmit",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "BROWSER=none storybook dev -p 6006"
   },
   "dependencies": {
     "clsx": "^2.1.0",
@@ -24,6 +25,15 @@
     "twin.macro": "^3.4.1"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.23",
+    "@storybook/addon-essentials": "^8.0.2",
+    "@storybook/addon-interactions": "^8.0.2",
+    "@storybook/addon-links": "^8.0.2",
+    "@storybook/addon-onboarding": "^8.0.2",
+    "@storybook/blocks": "^8.0.2",
+    "@storybook/react": "^8.0.2",
+    "@storybook/react-vite": "^8.0.2",
+    "@storybook/test": "^8.0.2",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@types/react-redux": "^7.1.33",
@@ -38,8 +48,10 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.8.0",
     "husky": "^9.0.11",
     "postcss": "^8.4.37",
+    "storybook": "^8.0.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"

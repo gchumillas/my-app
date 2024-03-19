@@ -14,6 +14,7 @@
 
 ## i18next
 
+## Storybook
 
 ## Recommended plugins for Visual Studio Code
 
