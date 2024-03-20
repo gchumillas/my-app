@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+## Main libraries
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [TailwindCSS](https://tailwindcss.com/) + [Styled Components](https://styled-components.com/) + [Twin](https://github.com/ben-rogerson/twin.macro): styling components
+- [Prettier](https://prettier.io/) + [ESlint](https://eslint.org/): enforce coding standards
+- [i18next](https://www.i18next.com/) + [react-i18next](https://react.i18next.com/): internationalization
+- [React Router v6](https://reactrouter.com/en/main): routing system
+- [Husky](https://typicode.github.io/husky/): prevent uploading bad code
+- [Redux](https://redux.js.org/): centralize the app state
+- [Storybook](https://storybook.js.org/): document and test your components
+- [Axios](https://github.com/axios/axios): make HTTP requests
+- [Luxon](https://moment.github.io/luxon/#/): a DateTime library with good TimeZone support
 
-Currently, two official plugins are available:
+## Recommended VSCode plugins
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Tailwind Twin IntelliSense](https://marketplace.visualstudio.com/items?itemName=lightyen.tailwindcss-intellisense-twin)
 
-## Expanding the ESLint configuration
+## Install and Run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+# Download and install packages
+git clone https://github.com/gchumillas/my-app
+cd my-app
+pnpm install
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+# Run de app
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
