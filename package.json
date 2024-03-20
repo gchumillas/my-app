@@ -12,6 +12,7 @@
     "storybook": "BROWSER=none storybook dev -p 6006"
   },
   "dependencies": {
+    "@fraku/ui": "^1.0.18",
     "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "i18next": "^23.10.1",
