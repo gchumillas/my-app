@@ -1,5 +1,15 @@
 {
-  "default": {},
+  "default": {
+    "id": "#ID",
+    "name": "Name",
+    "jobTitle": "Job title",
+    "email": "Email",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "are-you-sure": "Are you sure?",
+    "processing-request": "Processing request ..."
+  },
   "home-page": {
     "welcome": "Welcome to My App!"
   },

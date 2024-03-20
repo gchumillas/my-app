@@ -22,9 +22,8 @@ const HomePage = () => {
 
   const [doDelete] = useRequestLoader(
     async (id: string) => {
-      if (!confirm(t`are you sure?`)) return
+      if (!confirm(t`are-you-sure`)) return
       await deleteItem({ id })
-      console.log('done!')
     },
     [t]
   )
