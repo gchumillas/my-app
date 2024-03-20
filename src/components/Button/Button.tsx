@@ -3,9 +3,13 @@ import tw from 'twin.macro'
 import cl from 'clsx'
 import { ButtonProps } from './types'
 
-const Button = ({ disabled, onClick, children }: ButtonProps) => {
+const Button = ({ disabled, onClick, children, className }: ButtonProps) => {
   return (
-    <StyledButton disabled={disabled} onClick={onClick} className={cl('app-button', { 'app-disabled': disabled })}>
+    <StyledButton
+      disabled={disabled}
+      onClick={onClick}
+      className={cl(className, 'app-button', { 'app-disabled': disabled })}
+    >
       {children}
     </StyledButton>
   )

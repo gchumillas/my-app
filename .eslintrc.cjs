@@ -29,6 +29,10 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    'react-hooks/exhaustive-deps': [
+      'error',
+      { 'additionalHooks': '(usePageLoader|useRequestLoader)' }
+    ],
     'consistent-default-export-name/default-export-match-filename': 'error',
     'consistent-default-export-name/default-import-match-filename': [
       'error',

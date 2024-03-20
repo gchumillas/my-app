@@ -9,16 +9,24 @@ const DataTable = ({ children }: DataTableProps) => {
 const StyledTable = styled.table`
   ${tw`w-full`}
 
-  thead th {
+  th {
     ${tw`p-2 bg-blue-400 text-white font-medium text-left`}
-  }
 
-  tr:nth-child(even) td {
-    ${tw`bg-blue-100`}
+    &:last-child {
+      ${tw`text-right`}
+    }
   }
 
   td {
     ${tw`p-2`}
+
+    &:last-child {
+      ${tw`text-right`}
+    }
+  }
+
+  tr:nth-child(even) td {
+    ${tw`bg-blue-100`}
   }
 `
 

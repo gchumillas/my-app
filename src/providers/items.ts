@@ -3,7 +3,6 @@ import { faker } from '@faker-js/faker'
 import { Item } from './types'
 
 export const getItems = async (): Promise<Item[]> => {
-  await sleep(0)
   return Promise.resolve(
     [...Array(10).keys()].map((i) => ({
       id: `${i}`.padStart(3, '0'),
@@ -13,4 +12,11 @@ export const getItems = async (): Promise<Item[]> => {
       country: faker.location.country()
     }))
   )
+}
+
+export type DeleteItemParams = {
+  id: string
+}
+export const deleteItem = async (_: DeleteItemParams): Promise<void> => {
+  await sleep(5)
 }
