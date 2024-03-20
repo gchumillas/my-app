@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { usePageLoader } from 'src/libs/loaders'
 import { Item } from 'src/providers/types'
 import { getItems } from 'src/providers/items'
+import PageLayout from 'src/layouts/PageLayout'
 
 const HomePage = () => {
   const { t } = useTranslation('home-page')
@@ -14,7 +15,7 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div>
+    <PageLayout>
       <table>
         <thead>
           <th>
@@ -37,7 +38,7 @@ const HomePage = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </PageLayout>
   )
 }
 
