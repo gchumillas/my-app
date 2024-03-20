@@ -44,7 +44,6 @@ const HomePage = () => {
             <th>{t`name`}</th>
             <th>{t`jobTitle`}</th>
             <th>{t`email`}</th>
-            <th>{t`country`}</th>
             <th>
               <Button disabled={loading} onClick={doCreate} className="text-right">{t`create`}</Button>
             </th>
@@ -57,11 +56,10 @@ const HomePage = () => {
               <td>{item.name}</td>
               <td>{item.jobTitle}</td>
               <td>{item.email}</td>
-              <td>{item.country}</td>
               <td>
                 <div className="inline-flex gap-2">
                   <Button disabled={loading} onClick={doEdit}>{t`edit`}</Button>
-                  <Button disabled={loading} onClick={() => doDelete(item.id)}>{t`delete`}</Button>
+                  <Button danger disabled={loading} onClick={() => doDelete(item.id)}>{t`delete`}</Button>
                 </div>
               </td>
             </tr>

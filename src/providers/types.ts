@@ -3,5 +3,4 @@ export type Item = {
   name: string
   jobTitle: string
   email: string
-  country: string
 }

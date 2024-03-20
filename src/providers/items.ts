@@ -8,8 +8,7 @@ export const getItems = async (): Promise<Item[]> => {
       id: `${i}`.padStart(3, '0'),
       name: faker.person.fullName(),
       jobTitle: faker.person.jobTitle(),
-      email: faker.internet.email(),
-      country: faker.location.country()
+      email: faker.internet.email()
     }))
   )
 }
