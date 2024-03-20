@@ -4,6 +4,7 @@ import { usePageLoader } from 'src/libs/loaders'
 import { Item } from 'src/providers/types'
 import { getItems } from 'src/providers/items'
 import PageLayout from 'src/layouts/PageLayout'
+import DataTable from 'src/components/DataTable'
 
 const HomePage = () => {
   const { t } = useTranslation('home-page')
@@ -16,15 +17,15 @@ const HomePage = () => {
 
   return (
     <PageLayout>
-      <table>
+      <DataTable>
         <thead>
-          <th>
-            <td>{t`id`}</td>
-            <td>{t`name`}</td>
-            <td>{t`jobTitle`}</td>
-            <td>{t`email`}</td>
-            <td>{t`country`}</td>
-          </th>
+          <tr>
+            <th>{t`id`}</th>
+            <th>{t`name`}</th>
+            <th>{t`jobTitle`}</th>
+            <th>{t`email`}</th>
+            <th>{t`country`}</th>
+          </tr>
         </thead>
         <tbody>
           {items.map((item) => (
@@ -37,7 +38,7 @@ const HomePage = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </DataTable>
     </PageLayout>
   )
 }
