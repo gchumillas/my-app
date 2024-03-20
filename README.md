@@ -1,6 +1,6 @@
 ## Main libraries
 
-- [TailwindCSS](https://tailwindcss.com/) + [Styled Components](https://styled-components.com/) + [Twin](https://github.com/ben-rogerson/twin.macro): styling components
+- [TailwindCSS](https://tailwindcss.com/) + [Styled Components](https://styled-components.com/) + [Twin](https://github.com/ben-rogerson/twin.macro) + [clsx](https://github.com/lukeed/clsx): styling components
 - [Prettier](https://prettier.io/) + [ESlint](https://eslint.org/): enforce coding standards
 - [i18next](https://www.i18next.com/) + [react-i18next](https://react.i18next.com/): internationalization
 - [React Router v6](https://reactrouter.com/en/main): routing system
