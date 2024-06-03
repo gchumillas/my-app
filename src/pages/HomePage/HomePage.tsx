@@ -36,7 +36,7 @@ const HomePage = () => {
   return (
     <PageLayout>
       <p className="mb-4">{loading ? t`processing-request` : <>&nbsp;</>}</p>
-      <DataTable>
+      <DataTable data-testid="results">
         <thead>
           <tr>
             <th>{t`id`}</th>

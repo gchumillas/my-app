@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import { DataTableProps } from './types'
 
-const DataTable = ({ children }: DataTableProps) => {
-  return <StyledTable>{children}</StyledTable>
+const DataTable = ({ children, ...rest }: DataTableProps) => {
+  return <StyledTable {...rest}>{children}</StyledTable>
 }
 
 const StyledTable = styled.table`
